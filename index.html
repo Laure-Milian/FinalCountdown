@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown</title>
+	<link rel="stylesheet" href="node_modules/semantic-ui/dist/semantic.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div id="container">
+		<div class="ui centered grid">
+
+			<div id="time" class="row">
+				<span id="minutes">00</span> : <span id="seconds">00</span>
+			</div>
+
+			<div class="two centered column row">
+				<div class="ui input two wide column">
+					<input id="inputUserMinutes" type="number" min="0">
+				</div>
+				<div class="ui input two wide column">
+					<input id="inputUserSeconds" type="number" min="0">
+				</div>
+			</div>
+
+			<div id="video">
+			</div>
+
+			<div class="row">
+				<button id="btnstart" class="ui green button">Start</button>
+				<button id="btnstop" class="ui red button">Stop</button>
+				<button id="btnpause" class="ui orange button">Pause</button>
+				<button id="btnreset" class="ui purple button">Reset</button>
+			</div>
+
+			<div class="ui right aligned row">
+				<div id ="bar">
+					<div id="progress"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src=node_modules/jquery/dist/jquery.min.js></script>
+	<script src=node_modules/moment/min/moment-with-locales.min.js></script>
+	<script src=app.js></script>
+
+</body>
+</html>

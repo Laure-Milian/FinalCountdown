@@ -1,0 +1,24 @@
+{
+  "name": "33_final_countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laure-Milian/FinalCountdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laure-Milian/FinalCountdown/issues"
+  },
+  "homepage": "https://github.com/Laure-Milian/FinalCountdown#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "moment": "^2.15.2",
+    "semantic-ui": "^2.2.4"
+  }
+}
