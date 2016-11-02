@@ -42,19 +42,22 @@
 
 			if (this.intervalID === null) {
 				var duration = moment.duration(6, 'seconds');
-				var start = moment();		
+				var start = moment();
+				console.log(start);	
 
 				this.intervalID = setInterval(function() {
 					var now = moment();
+					console.log(now);
 					var diff = now.diff(start);
+					console.log(diff);
 					var newDuration = duration.subtract(diff, 'milliseconds');
+					console.log(newDuration);
 					this.time = newDuration.get('seconds');
-					console.log(this.time);	
 
 					if (this.time > 0) {
 						this.timeSeparation();
 					}
-				}.bind(this), 10);
+				}.bind(this), 1000);
 			}
 		},
 
